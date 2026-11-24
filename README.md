@@ -1,3 +1,5 @@
+**English** · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [Français](README.fr.md) · [Deutsch](README.de.md)
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/taste-skill-wordmark-dark.png" />
@@ -58,7 +60,7 @@
 
 <p align="center"><sub><a href="https://github.com/sponsors/Leonxlnx">Become a sponsor</a></sub></p>
 
-**Taste Skill** (`tasteskill 2.5.1`) is an Agent Skill that makes coding agents build professional company websites at the `figma.com` and `x.ai` level instead of assembling a generic landing page. Every build uses plain copy, one design system, one section per screen, equal left and right edges, real photographs (licensed stand-ins when the client has none), real brand icons and real product UI, a hero entrance and one or two dealt moments on every page, quiet micro-interactions, and shader effects and scroll scenes kept strictly for tech, gaming and software pages, all verified in a real browser by a checker and a finish gate that enforce the rules.
+**Taste Skill** (`tasteskill 2.5.2`) is an Agent Skill that makes coding agents build professional company websites at the `figma.com` and `x.ai` level instead of assembling a generic landing page. Every build uses plain copy, one design system, one section per screen, equal left and right edges, real photographs (licensed stand-ins when the client has none), real brand icons and real product UI, a hero entrance and one or two dealt moments on every page, quiet micro-interactions, and shader effects and scroll scenes kept strictly for tech, gaming and software pages, all verified in a real browser by a checker and a finish gate that enforce the rules.
 
 Pages built from a single brief in earlier v2 runs:
 
@@ -95,7 +97,7 @@ Run these inside Claude Code. The skill is namespaced under `taste-skill:`, so i
 /plugin install taste-skill@taste-skill
 ```
 
-`/plugin update` upgrades it later.
+`/plugin update` upgrades it later. On claude.ai, upload the repository's zip (**Code > Download ZIP** on GitHub) under **Customize > Plugins > Add > Upload plugin**.
 
 </details>
 
@@ -169,7 +171,7 @@ npx skills add https://github.com/Leonxlnx/taste-skill-classics --skill "high-en
 ## Common Questions
 
 **What does the skill need?**  
-Node 22 or newer and Chrome, Edge or Chromium; ffmpeg is optional (WebP photographs and the phone crop of a hero photograph). It installs nothing and uses no API keys. Bundled Commons photographs are stored locally; network access is used only when downloading additional photographs, Google Fonts or brand icons.
+Node 22 or newer and Chrome, Edge or Chromium; ffmpeg is optional (WebP photographs and the phone crop of a hero photograph). It installs nothing and uses no API keys. Bundled Commons photographs are stored locally. Downloads may use the network, and browser checks can request remote resources referenced by the page, including when the [Claude Code Stop hook](skills/taste-skill/references/gate.md#as-a-hook) runs.
 
 **Where do the pictures come from, and can I use them?**  
 From the skill's vetted photograph library (`assets/photos/photos.json`, including bundled Wikimedia Commons WebP sets and Unsplash photographs) dealt by `scripts/photos.mjs`. Library frames are used for trade and material details (or marked explicitly as draft stand-ins when the client has no photographs yet), never passed off as the client's own room, staff or product, and credited in one expandable footer line (`photos.mjs credits`).
@@ -225,7 +227,6 @@ If Taste Skill helps you, consider sponsoring:
 <a href="https://github.com/AnthonyLiuVa"><img src="https://github.com/AnthonyLiuVa.png" width="40" height="40" style="border-radius:50%" alt="AnthonyLiuVa" title="AnthonyLiuVa" /></a>
 <a href="https://github.com/Wolfy18"><img src="https://github.com/Wolfy18.png" width="40" height="40" style="border-radius:50%" alt="Wolfy18" title="Wolfy18" /></a>
 <a href="https://github.com/Gigslol"><img src="https://github.com/Gigslol.png" width="40" height="40" style="border-radius:50%" alt="Gigslol" title="Gigslol" /></a>
-<a href="https://github.com/moritz-mode"><img src="https://github.com/moritz-mode.png" width="40" height="40" style="border-radius:50%" alt="moritz-mode" title="moritz-mode" /></a>
 </p>
 
 <p align="center">
